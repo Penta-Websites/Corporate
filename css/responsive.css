@@ -1,0 +1,230 @@
+/* ==========================================================================
+   ApexForge Corporate Manufacturing — Responsive Design System
+   ========================================================================== */
+
+/* 1200px Breakpoint */
+@media (max-width: 1200px) {
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .kpi-card:nth-child(2) {
+    border-right: none;
+  }
+  
+  .kpi-card:nth-child(-n+2) {
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* 992px Breakpoint (Tablets & Small Laptops) */
+@media (max-width: 992px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .topbar {
+    display: none; /* Hide topbar on mobile/tablets to preserve vertical viewport */
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background-color: var(--color-bg-surface);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 5rem 1.5rem 2rem;
+    box-shadow: var(--shadow-xl);
+    transition: right var(--transition-normal);
+    z-index: 120;
+    overflow-y: auto;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-item {
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .nav-link {
+    padding: 0.9rem 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background-color: var(--color-bg-subtle);
+    border-radius: var(--radius-sm);
+    display: none;
+    margin-bottom: 0.75rem;
+  }
+
+  .nav-item.dropdown-open .dropdown-menu {
+    display: block;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .mobile-menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 19, 34, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 110;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+  }
+
+  .mobile-menu-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .calc-body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .industry-tab-content.active {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .case-studies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 768px Breakpoint (Mobile Landscape & Large Phones) */
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .hero-slide-content {
+    padding: 3.5rem 0 5rem;
+  }
+
+  .hero-specs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .kpi-section {
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kpi-card {
+    border-right: none;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .kpi-card:last-child {
+    border-bottom: none;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .case-studies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calc-row-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .slider-arrows {
+    right: 1.25rem;
+    bottom: 1.25rem;
+  }
+}
+
+/* 480px Breakpoint (Small Mobile) */
+@media (max-width: 480px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-specs-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .btn-back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 42px;
+    height: 42px;
+  }
+
+  .toast {
+    max-width: calc(100vw - 3rem);
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+}
