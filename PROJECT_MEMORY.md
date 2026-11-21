@@ -10,8 +10,10 @@
 ## Repositories & Live URLs
 - **Penta-Websites**: [https://penta-websites.github.io/Corporate/](https://penta-websites.github.io/Corporate/)
   - Git Remote `origin`: `https://github.com/Penta-Websites/Corporate.git`
+  - GitHub Pages: Active
 - **Pixel-Force**: [https://pixel-force.github.io/Corporate/](https://pixel-force.github.io/Corporate/)
   - Git Remote `pixel`: `https://github.com/Pixel-Force/Corporate.git`
+  - GitHub Pages: Active (Status: built)
 
 ## Architecture & Technology Stack
 - **Framework**: Semantic HTML5, Modular CSS3 with Custom Properties (CSS variables), Vanilla ES6+ JavaScript.
